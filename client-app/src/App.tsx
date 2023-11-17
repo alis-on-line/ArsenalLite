@@ -60,7 +60,6 @@ function App() {
     setIsSubmitting(true);
     PlayersService.Players.create(player).then(() => {
       setPlayers([...players, player]);
-      console.log(player);
       setAddMode(false);
       setIsSubmitting(false);
     });
