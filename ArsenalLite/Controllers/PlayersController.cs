@@ -54,13 +54,6 @@ public class PlayersController : ControllerBase
             return BadRequest();
         }
 
-        var players = await _playerService.GetAllPlayers();
-        var hasValidJerseyNumber = _validatorService.HasValidJerseyNumber(players, player);
-        if (!hasValidJerseyNumber)
-        {
-            return BadRequest();
-        }
-
         var updatedPlayer = await _playerService.UpdatePlayer(existingPlayer, player);
         return Ok(updatedPlayer);
     }

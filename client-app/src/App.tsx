@@ -4,7 +4,6 @@ import { Button, Container } from "semantic-ui-react";
 import Dashboard from "./Component/Dashboard/Dashboard";
 import NavBar from "./Component/Layout/NavBar";
 import PlayersService from "./Services/PlayerService";
-import "./App.css";
 import LoadingComponent from "./Component/Layout/LoadingComponent";
 
 function App() {
