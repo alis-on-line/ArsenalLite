@@ -61,7 +61,8 @@ function App() {
     PlayersService.Players.create(player).then(() => {
       setPlayers([...players, player]);
       setAddMode(false);
-      setIsSubmitting(false);
+      setIsSubmitting(false);      
+      window.location.reload();
     });
   };
 
@@ -74,6 +75,7 @@ function App() {
       ]);
       setEditMode(false);
       setIsSubmitting(false);
+      window.location.reload();
     });
   };
 
